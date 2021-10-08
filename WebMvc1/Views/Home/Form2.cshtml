@@ -1,0 +1,35 @@
+﻿@model WebMvc1.Models.FormModel
+@{
+    ViewData["Title"] = "Form2";
+
+}
+
+<div class="container">
+    <h1>Form2 - Prosty formularz (Razor)</h1>
+    <form method="POST">
+        <div class="form-group row">
+            <div class="col-xs-2">
+                <label asp-for="Name"></label>
+                <input class="form-control" asp-for="Name">
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-xs-2">
+                <label asp-for="Description"></label>
+                <input class="form-control" asp-for="Description">
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="form-check">
+                <input class="form-check-input" asp-for="IsVisible">
+                <label asp-for="IsVisible"></label>
+            </div>
+        </div>
+        <br />
+        <div class="form-group row">
+            <div class="col-xs-2">
+                <input class="btn btn-primary" type="submit" value="Dodaj element">
+            </div>
+        </div>
+    </form>
+</div>
